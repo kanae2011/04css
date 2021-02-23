@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+<style type="text/css">
+img{
+	display: none;
+}
+</style>
+
+<script type="text/javascript">
+$(function () {
+	$("#showimageBtn").click(function() {
+		$("img").show(); 
+	});
+	$("#hideimageBtn").click(function() {
+		$("img").hide();
+	});
+});
+</script>
+</head>
+<body>
+<h2>처음에는 이미지가 안보이게 하는 </h2>
+<button class="btn btn-default" id="showimageBtn">이미지 보기</button>
+<button class="btn btn-default" id="hideimageBtn">이미지 안보기</button><br>
+<img alt="이미지" src="img/bts.jpg"><br>
+이미지 밑의 글자 
+</body>
+</html>

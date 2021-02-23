@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/*scrip tag 안에 있다고 생각하고 작성*/
+
+/*모든 글자르 회색으로 */
+
+*{
+	color:#666; 
+}
+/*aqua id */
+#aqua{
+	color: aqua;
+}

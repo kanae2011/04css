@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+ #outter p{
+ 	color: red;
+ }
+ #outter > p {
+ 	font-weight:900; 
+ }
+ 	input:checked { /*input 타입이 checkbox인 태그 중에서 체크가 되어있는 태그 */
+	width:15px;
+	height: 15px;
+}
+	input [name=name]{
+	border:1px dashed blue;	
+}
+	input {
+	background: #eee;
+}
+	input:focus { /*커서가 위치해 있는 input 태그를 찾음.커서가 이동하면 이동된 태그에 적용 */
+	background: #fff;
+}
+</style>
+</head>
+<body>
+<div id="outter">
+	<div>
+		<p>div.outter - div - p</p>
+	</div>
+	<p>
+	div.outter-p
+	</p>
+	<input type="checkbox" checked="checked">
+	<input type="checkbox">
+	<input name="name">
+	<input name="title">
+</div>
+</body>
+</html>

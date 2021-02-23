@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{
+	border: 1px solid black;
+	width: 300px;
+	height: 300px; 
+	position: absolute;  /*놓여지는 위치:position 절대위치:absolute / 객체를 겹쳐보여주거나 팝업으로 올라오는 창 등에 활용 */
+}
+#div1{
+	background: orange;
+	top: 120px; /*position-absolute일 때 맨 위(창의끝)나 맨 왼쪽에서 얼마나 떨어져있는지 */
+	left: 120px;
+	z-index: 1; /*z-index:놓여지는 순서 ,숫자가 클수록 위로 올라옴 */
+}
+#div2{
+	background: black;
+	top: 240px;
+	left: 240px;
+	z-index: 3;
+}
+#div3{
+	background: yellow;
+	top: 360px;
+	left: 360px;
+	z-index: 2;
+}
+</style>
+</head>
+<body>
+<div id="div1"></div>
+<div id="div2"></div>
+<div id="div3"></div>
+</body>
+</html>

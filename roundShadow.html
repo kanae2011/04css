@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{
+	border: 2px solid #73AD21;
+	padding: 20px;
+	margin: 30px;
+	width: 300px;
+	height: 200px;
+	/*글자 가운데 정렬*/
+	text-align: center;
+	/*글자 위아래 가운데 정렬이 뭔지도 모르냐 병신아 */
+	
+	/*글자의 모양*/
+	font-size: 24pt;
+	/*배경색 지정,위의 박스와 틈이 좁으면 그림자가 겹치게 되므로 뒷배경을 바탕색으로 지정*/
+	background: white;
+}
+#div2,#div3,#div4{
+	/*둥근 모서리*/
+	border-radius: 20px;
+}
+#div3{
+	/*그림자 사용*/
+	box-shadow: 20px 20px 10px; /*왼쪽에서부터 오른쪽,위에서부터 밑/방향 반대일 때는 - 값,번지는효과 값 */
+
+}
+#div4{
+	/*글자 그림자->좌-우,위-아래(반대는 마이너스 값),번지는 정도 ,그림자 색상*/
+	text-shadow: 2px 2px 3px green;
+}
+
+#div5{
+	height: 50px;
+	padding: 30px;
+	border-radius: 40px;
+}
+</style>
+</head>
+<body>
+<div id="div1">div</div>
+<div id="div2">모서리가 둥근 div</div>
+<div id="div3">모서리가 둥근 div 그림자</div>
+<div id="div4">모서리가 둥근 div</div>
+<div id="div5">원 만들기</div>
+
+</body>
+</html>
